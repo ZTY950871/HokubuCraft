@@ -1,0 +1,69 @@
+﻿     <!-- 快速启动游戏 -->
+<!-- 注：必须保障在最上方！ -->
+<local:MyCard Title="                                快速启动游戏：HokubuCraft 3rd"> 
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap"
+                   Text="点他！直接进入服务器，不用点多人游戏-HokubuCraft了（" />
+        <local:MyButton Margin="0,8,0,0" Width="250" Height="35" ColorType="Highlight" 
+                   Text="启动 HokubuCraft 3rd" EventType="启动游戏" EventData="HokubuCraft 3rd-sodium|mc.hokubu.cn" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="快速启动的服务器ip可能不是最新版，我们将在群内尽力更新，还请以群公告为准" />
+    </StackPanel>
+</local:MyCard>
+
+
+
+<local:MyCard Title="                                              公告板" CanSwap="False">
+    <StackPanel Margin="25,40,23,15" >
+	<local:MyHint Margin="0,8,0,2"  IsWarn="False" 
+                   Text="       国铁追加包为自愿购买自愿使用" />
+	<local:MyHint Margin="0,8,0,2"  IsWarn="False" 
+                   Text="       进入服务器注册后请使用/bdmail来绑定邮箱，这有助于您在忘记密码时使用邮箱验证码找回密码" />
+    <local:MyHint Margin="0,8,0,2"  IsWarn="True" 
+                   Text="       请注意，游戏分配内存建议为6144MB及以上，若内存不足，您的游玩效果可能会受到影响" />
+    <local:MyHint Margin="0,8,0,2"  IsWarn="True" 
+                   Text="       遇到问题点客户端-帮助页面，群内问问题以前先看看能不能自己通过帮助页面解决，如果解决不了请先想好自己要问什么再询问" />
+          
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开论坛" EventType="打开网页" EventData="https://www.hokubu.cn" ToolTip="https://www.hokubu.cn"/>
+        <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="这是一个“神奇”的按钮" />
+    </StackPanel>
+</StackPanel>
+</local:MyCard>
+
+
+
+<local:MyCard Title="                                           更新公告" CanSwap="False">
+    <StackPanel Margin="25,40,23,15" >
+        <TextBlock Margin="0,0,0,4" Foreground="#8C7721"
+                    Text="        本次启动器版本为春节特别版（v3.3.0 2023/2/3版）" />
+        <TextBlock Margin="0,0,0,4" Foreground="#8C7721"
+                    Text="                                         更新内容" />
+        <TextBlock Margin="0,2,0,4" 
+                    Text="1-由手动更新改为自动更新                      2-更正了mod" />
+	   <TextBlock Margin="0,2,0,4" 
+                    Text="3-官网与论坛同时开放" />
+    </StackPanel>
+</local:MyCard>
+
+
+
+<local:MyCard Title="                                              赞助" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,2,0,4" 
+                    Text="各位父老乡亲，看在努力制作主页的份上，给点赞助吧！" />
+        <Image Height="350" HorizontalAlignment="Center" Source="https://1r2image.com/i/2023/01/15/63c390549e75c.jpg" />
+    </StackPanel>
+</local:MyCard>
+
+
+
+<local:MyCard Title="                                                更多" >
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+          <local:MyListItem Margin="25,40,23,15"  
+		        Logo="https://i.niupic.com/images/2023/01/13/afYw.jpg" Title="客户端反馈表" Info="可填写后发送至“芜湖~”" 
+                EventType="下载文件" EventData="https://files.catbox.moe/v7d0fc.xlsx" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
